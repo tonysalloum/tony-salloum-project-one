@@ -1,0 +1,305 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search-results-button,input[type=search]::-webkit-search-results-decoration{-webkit-appearance:none;-moz-appearance:none}input[type=search]{-webkit-appearance:none;-moz-appearance:none;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}textarea{overflow:auto;vertical-align:top;resize:vertical}audio,canvas,video{display:inline-block;max-width:100%}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}a:focus{outline:thin dotted}a:active,a:hover{outline:0}img{border:0;-ms-interpolation-mode:bicubic}figure{margin:0}form{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}button,html,input,select,textarea{color:#222}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}img{vertical-align:middle}fieldset{border:0;margin:0;padding:0}textarea{resize:vertical}.chromeframe{margin:.2em 0;background:#ccc;color:#000;padding:.2em 0}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
+
+/* body styles */
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+
+/* font families*/
+
+    /*  Heading text - bikerland - 130px, about us, our mission, meet alissa, the gram, 42px, contact, stay updated --- font-family: 'Pacifico', ;
+
+    Body text, regular, 20px
+    button text, bold, 18px font-family: 'Catamaran',  */
+body {
+    font-size: 2.5rem;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 400;
+    line-height: 29px;
+    color: #1F2022;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1400px;
+    margin: 0 auto;
+    line-height: 29px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    /*   max-width:960px; */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 13rem;
+    font-family: 'Pacifico', sans-serif;
+    color: #f2a11c;
+    /* margin: 0 auto; */
+}
+
+h2 {
+    font-size: 4.2rem;
+    font-family: 'Pacifico', sans-serif;
+    color: #1F2022;
+}
+
+p {
+    font-size: 2rem;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    line-height: 29px;
+}
+/* header styles */
+
+
+header {
+    height: 80vh;
+    background: url(../biker-land-assets/image-1.jpg/) 50% no-repeat;
+    background-size: cover;
+    /* display: block; */
+    flex-wrap: wrap;
+    width: 100%;
+    background-position: center;
+    min-height: 600px;
+}
+
+header h1 {
+    /* float: left; */
+    text-align: center;
+    /* width: 100%; */
+}
+
+nav {
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    float: left;
+    padding: 10px 15px;
+    margin: 0 10px;
+    background-color: transparent;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #f2a11c;
+}
+
+.socialLogos {
+    display: block;
+    /* position: absolute; */
+}
+
+.socialLogos a {
+    color: #f2a11c;
+    float: right;
+}
+
+/* main styles */
+
+/* about section */
+
+.about, 
+.mission,
+.blog {
+    background-color: #F4F4F4;
+}
+
+.aboutContent {
+    float: left;
+    padding: 15px;
+    width: 50%;
+}
+
+.aboutImage {
+    float: right;
+    /* margin-right: 20px; */
+    width: 50%;
+}
+
+.missionImage {
+    float: left;
+    /* margin-right: 20px; */
+    width: 50%;
+}
+
+.missionContent {
+    float: right;
+    padding: 20px;
+    width: 50%;
+}
+
+
+.blogImage {
+    float: left;
+    width: calc(40% - 10px);
+}
+
+.blogContent {
+    float: left;
+    width: 60%;
+}
+
+.info {
+    background-image: url(../biker-land-assets/image-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.gram {
+    background-color: #F4F4F4;
+    height: 70vh;
+}
+
+.gram h2 {
+    text-align: center;
+    padding: 60px 40px;
+}
+
+
+.gram .gallery li {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: calc((100% - 60px) / 3);
+}
+
+
+
+
+gram .gallery li:nth-child(3n) {
+    margin-right: 0;
+}
+
+/* contact styles */
+
+.contact {
+    background-color: #1F2022;
+    color: #FFFFFF;
+}
+
+.contact h3 {
+    font-size: 2.5rem;
+    font-family: 'Pacifico', sans-serif;
+    color: #F2A11C;
+    padding: 20px;
+}
+
+.contact p {
+    font-size: 1.8rem;
+}
+
+.bottomNav {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+form {
+    position: relative;
+    width: 50%;
+}
+
+.contactContainer {
+    width: 50%;
+}
+
+button {
+    background-color: #f2a11c;
+    border: transparent;
+    text-decoration: none;
+    /* color: #1F2022; */
+    padding: 5px 10px;
+    display: inline-block;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    width: 20%;
+}
+
+input {
+    border: transparent;
+    text-decoration: none;
+    padding: 0 10px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    float: left;
+    width: 80%;
+}
+
+/* footer styles */
+
+.copyright p {
+    background-color: black;
+    color: #4A4A4A;
+    text-align: center;
+    width: 100%;
+    clear: both;
+    /* margin-top: 20px; */
+}
+
+/* media queries  */
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
