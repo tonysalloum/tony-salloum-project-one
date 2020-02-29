@@ -43,9 +43,9 @@ body {
     color: #1F2022;
     width: 100%;
     min-width: 320px;
-    max-width: 1400px;
+    max-width: 1450px;
     margin: 0 auto;
-    line-height: 29px;
+    /* border-bottom: 1px solid #1F2022; */
 }
 
 .wrapper {
@@ -90,27 +90,30 @@ a {
     text-decoration: none;
     font-size: 1.8rem;
     line-height: 29px;
+    transition: ease 1s;
+    outline: 0;
+
 }
 /* header styles */
 
 
-header {
+/* header {
     height: 80vh;
     background: url(../biker-land-assets/image-1.jpg/) 50% no-repeat;
     background-size: cover;
-    /* display: block; */
-    flex-wrap: wrap;
+    display: block;
     width: 100%;
     background-position: center;
     min-height: 600px;
-}
+} */
 
-header h1 {
-    /* float: left; */
+/* header h1 {
+    float: left;
     text-align: center;
-    /* width: 100%; */
-}
+    width: 100%;
+} */
 
+/* 
 nav {
     float: right;
 }
@@ -131,62 +134,195 @@ nav a {
 nav a:hover,
 nav a:focus {
     color: #f2a11c;
-}
+} */
 
-.socialLogos {
+/* .socialLogos {
     display: block;
-    /* position: absolute; */
-}
+    position: absolute;
+} */
 
-.socialLogos a {
+/* .socialLogos a {
     color: #f2a11c;
     float: right;
+} */
+
+/* img {
+    max-width: 100%;
+} */
+.wrapper {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    text-align: center;
+}
+header {
+    background: url(../biker-land-assets/image-1.jpg) 50% no-repeat;
+    background-size: cover;
+    height: 95vh;
+    min-height: 600px;
+    padding: 30px 0;
+    background-position: center;
+    display: block;
+    position: relative;
 }
 
+header nav {
+    font-family: 'Catamaran';
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+
+
+nav li {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+}
+nav a {
+    font-size: 2rem;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #f2a11c;
+}
+
+h1 {
+    font-family: 'Pacifico';
+    font-size: 14rem;
+    color: #F2A11C;
+    text-align: center;
+    display: inline-block;
+    padding-top: 28%;
+}
+.icons a {
+    color: #f2a11c;
+    font-size: 2.8rem;
+    padding: 30px;
+}
+.icons {
+    position: absolute;
+    right: 0%;
+    top: 35%;
+}
+
+.icons li {
+    padding-bottom: 7px;
+} 
 /* main styles */
 
-/* about section */
-
 .about, 
-.mission,
-.blog {
+.mission
+    {
     background-color: #F4F4F4;
 }
 
-.aboutContent {
+.about h2 {
+    margin-right: 20px;
+    padding-bottom: 30px;
+}
+
+.aboutContent, 
+.missionContent {
     float: left;
-    padding: 15px;
+    padding: 10%;
     width: 50%;
 }
 
-.aboutImage {
-    float: right;
-    /* margin-right: 20px; */
-    width: 50%;
+.aboutContainer,
+.missionContainer {
+    height: 500px;
 }
 
+.missionContainer {
+    clear: both;
+}
+
+.aboutImage,
 .missionImage {
     float: left;
-    /* margin-right: 20px; */
     width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
-.missionContent {
+.aboutImage img {
+    max-width: auto;
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.readMore {
+    background-color: #1F2022;
+    padding: 7px 23px;
+    text-transform: uppercase;
+    color: #f2a11c;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.readMore:hover,
+.readMore:focus {
+    color: #FFFFFF;
+    background-color: #4A4A4A;
+    
+}
+.missionImage img {
+    max-width: auto;
+    width: 100%;
+    position: relative;
+    /* right: 10%; */
+    height: 100%;
+}
+
+.mission h2 {
+    margin-right: 20px;
+    padding-bottom: 30px;
+}
+/* .missionImage {
+    float: left;
+    margin-right: 20px;
+    width: 50%;
+    height: 100%;
+} */
+
+/* .missionContent {
     float: right;
-    padding: 20px;
+    padding: 135px;
     width: 50%;
+} */
+
+.blog {
+    padding: 118px 125px;
+    width: 100%;
 }
 
-
+.blog h2 {
+    margin-right: 20px;
+    padding-bottom: 30px;
+}
 .blogImage {
     float: left;
-    width: calc(40% - 10px);
+    width: calc(30% - 30px);
 }
 
 .blogContent {
     float: left;
-    width: 60%;
+    width: 70%;
+    padding-left: 50px;
+    padding-top: 7px;
 }
+
+/* info styles */
 
 .info {
     background-image: url(../biker-land-assets/image-5.jpg);
@@ -195,14 +331,47 @@ nav a:focus {
     height: 400px;
 }
 
+.products a,
+.community a,
+.reachOut a {
+    color: #FFFFFF;
+    padding: 70px;
+    /* display: inline-block; */
+    font-size: 5rem;
+}
+
+.products,
+.community,
+.reachOut {
+    display: inline-block;
+    padding-top: 180px;
+
+}
+
+.infoIcons {
+    text-align: center;
+    /* display: inline-block; */
+    /* float: left; */
+}
+
+.infoIcons p {
+    color: #f2a11c;
+    padding: 15px;
+    font-size: 2.5rem;
+    letter-spacing: .1rem;
+}
+
+/* the gram styles */
 .gram {
     background-color: #F4F4F4;
-    height: 70vh;
+    height: 80vh;
+    padding-bottom: 75px;
+
 }
 
 .gram h2 {
     text-align: center;
-    padding: 60px 40px;
+    padding: 75px 40px;
 }
 
 
@@ -216,22 +385,24 @@ nav a:focus {
 
 
 
-gram .gallery li:nth-child(3n) {
+.gram .gallery li:nth-last-child(1) {
     margin-right: 0;
 }
 
-/* contact styles */
+/* footer styles */
+
 
 .contact {
     background-color: #1F2022;
     color: #FFFFFF;
+    clear: both;
 }
 
 .contact h3 {
     font-size: 2.5rem;
     font-family: 'Pacifico', sans-serif;
     color: #F2A11C;
-    padding: 20px;
+    padding-bottom: 20px;
 }
 
 .contact p {
@@ -241,24 +412,32 @@ gram .gallery li:nth-child(3n) {
 .bottomNav {
     width: 100%;
     text-align: center;
-    padding-top: 30px;
+    padding: 80px 0 50px 0;
+    text-transform: uppercase;
 }
 
 form {
-    position: relative;
+    /* position: relative; */
     width: 50%;
+    float: left;
+    margin-bottom: 100px;
+    text-align: left;
 }
 
 .contactContainer {
     width: 50%;
+    float: left;
+    text-align: left;
 }
-
+form p {
+    padding-bottom: 12px;
+}
 button {
     background-color: #f2a11c;
     border: transparent;
     text-decoration: none;
     /* color: #1F2022; */
-    padding: 5px 10px;
+    padding: 10px 20px;
     display: inline-block;
     font-family: 'Catamaran', sans-serif;
     font-weight: 700;
@@ -267,32 +446,56 @@ button {
     width: 20%;
 }
 
+button:hover,
+button:focus {
+    color: #f2a11c;
+    background-color: #FFFFFF;
+    transition: ease 1s;
+}
+
 input {
     border: transparent;
     text-decoration: none;
-    padding: 0 10px;
+    padding: 10px 20px;
     font-family: 'Catamaran', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1.8rem;
     float: left;
     width: 80%;
 }
 
-/* footer styles */
+.copyright {
+    clear: both;
+}
 
 .copyright p {
     background-color: black;
-    color: #4A4A4A;
+    color: lightgray;
     text-align: center;
     width: 100%;
-    clear: both;
-    /* margin-top: 20px; */
+    /* margin-top: 30px; */
 }
 
 /* media queries  */
 
 
 /* Portrait tablet and small desktops */
+@media (max-width: 1050px) {
+    h1 {
+        font-size: 12rem;
+        padding-top: 35%;
+    }
+
+    .icons {
+        position: absolute;
+    }
+
+    .aboutContent, 
+    .missionContent {
+        
+    }
+}
+
 @media (max-width: 940px) {
 }
 
