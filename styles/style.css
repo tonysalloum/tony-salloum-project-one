@@ -94,67 +94,17 @@ a {
     outline: 0;
 
 }
-/* header styles */
 
-
-/* header {
-    height: 80vh;
-    background: url(../biker-land-assets/image-1.jpg/) 50% no-repeat;
-    background-size: cover;
-    display: block;
-    width: 100%;
-    background-position: center;
-    min-height: 600px;
-} */
-
-/* header h1 {
-    float: left;
-    text-align: center;
-    width: 100%;
-} */
-
-/* 
-nav {
-    float: right;
-}
-
-nav li {
-    display: inline-block;
-}
-
-nav a {
-    float: left;
-    padding: 10px 15px;
-    margin: 0 10px;
-    background-color: transparent;
-    color: #FFFFFF;
-    text-align: center;
-}
-
-nav a:hover,
-nav a:focus {
-    color: #f2a11c;
-} */
-
-/* .socialLogos {
-    display: block;
-    position: absolute;
-} */
-
-/* .socialLogos a {
-    color: #f2a11c;
-    float: right;
-} */
-
-/* img {
-    max-width: 100%;
-} */
 .wrapper {
     margin: 0 auto;
     max-width: 1280px;
     width: 90%;
     text-align: center;
 }
+
+/* header styles */
+
+
 header {
     background: url(../biker-land-assets/image-1.jpg) 50% no-repeat;
     background-size: cover;
@@ -172,8 +122,6 @@ header nav {
     color: white;
     text-align: center;
 }
-
-
 
 nav li {
     display: inline-block;
@@ -222,6 +170,7 @@ h1 {
 .mission
     {
     background-color: #F4F4F4;
+    margin: 0 auto;
 }
 
 .about h2 {
@@ -229,16 +178,16 @@ h1 {
     padding-bottom: 30px;
 }
 
-.aboutContent, 
-.missionContent {
+.galleryContent {
     float: left;
-    padding: 10%;
+    padding: 10% 10% 10% 10%;
     width: 50%;
+    margin: 0 auto;
 }
 
 .aboutContainer,
 .missionContainer {
-    height: 500px;
+    height: 550px;
 }
 
 .missionContainer {
@@ -259,6 +208,7 @@ h1 {
     width: 100%;
     position: relative;
     height: 100%;
+    object-fit: cover;
 }
 
 .readMore {
@@ -282,28 +232,19 @@ h1 {
     position: relative;
     /* right: 10%; */
     height: 100%;
+    object-fit: cover;
 }
 
 .mission h2 {
     margin-right: 20px;
     padding-bottom: 30px;
 }
-/* .missionImage {
-    float: left;
-    margin-right: 20px;
-    width: 50%;
-    height: 100%;
-} */
 
-/* .missionContent {
-    float: right;
-    padding: 135px;
-    width: 50%;
-} */
 
 .blog {
     padding: 118px 125px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .blog h2 {
@@ -312,12 +253,12 @@ h1 {
 }
 .blogImage {
     float: left;
-    width: calc(30% - 30px);
+    width: calc(40% - 30px);
 }
 
 .blogContent {
     float: left;
-    width: 70%;
+    width: 60%;
     padding-left: 50px;
     padding-top: 7px;
 }
@@ -325,10 +266,12 @@ h1 {
 /* info styles */
 
 .info {
-    background-image: url(../biker-land-assets/image-5.jpg);
-    background-repeat: no-repeat;
+    background: url(../biker-land-assets/image-5.jpg) 50% no-repeat;
     background-size: cover;
-    height: 400px;
+    background-position: center;
+    height: 450px;
+    display: block;
+    margin: 0 auto;
 }
 
 .products a,
@@ -365,7 +308,7 @@ h1 {
 .gram {
     background-color: #F4F4F4;
     height: 80vh;
-    padding-bottom: 75px;
+    /* padding-bottom: 75px; */
 
 }
 
@@ -391,6 +334,12 @@ h1 {
 
 /* footer styles */
 
+.bottomNav {
+    width: 100%;
+    text-align: center;
+    padding: 80px 0 50px 0;
+    text-transform: uppercase;
+}
 
 .contact {
     background-color: #1F2022;
@@ -409,12 +358,7 @@ h1 {
     font-size: 1.8rem;
 }
 
-.bottomNav {
-    width: 100%;
-    text-align: center;
-    padding: 80px 0 50px 0;
-    text-transform: uppercase;
-}
+
 
 form {
     /* position: relative; */
@@ -443,7 +387,7 @@ button {
     font-weight: 700;
     font-size: 1.8rem;
     text-transform: uppercase;
-    width: 20%;
+    width: 25%;
 }
 
 button:hover,
@@ -453,7 +397,7 @@ button:focus {
     transition: ease 1s;
 }
 
-input {
+input[type=email] {
     border: transparent;
     text-decoration: none;
     padding: 10px 20px;
@@ -461,7 +405,7 @@ input {
     font-weight: 400;
     font-size: 1.8rem;
     float: left;
-    width: 80%;
+    width: 75%;
 }
 
 .copyright {
@@ -483,7 +427,7 @@ input {
 @media (max-width: 1050px) {
     h1 {
         font-size: 12rem;
-        padding-top: 35%;
+        padding-top: 48%;
     }
 
     .icons {
@@ -492,15 +436,182 @@ input {
 
     .aboutContent, 
     .missionContent {
-        
+        padding: 6% 6% 0 6%;
+    }
+
+    .aboutImage img {
+        /* width: 100%; */
+        position: relative;
+        height: 100%;
+    }
+
+    .aboutContainer,
+    .missionContainer {
+    height: 400px;
+    }
+
+    .blog h2 {
+        margin-right: 20px;
+        padding-bottom: 30px;
+    }
+
+    .blogImage {
+        float: left;
+        width: calc(40% - 10px);
+        margin-right: 10px;
+        /* margin-top: 80px; */
+    }
+
+    .blogContent {
+        float: left;
+        width: 60%;
+        padding-left: 60px;
+        padding-top: 0px;
+    }
+
+    .gram {
+        height: 60vh;
+        padding: 0;
+    }
+
+    input[type=email], button {
+        width: 90%;
+        text-align: center;
+        margin-top: 10px;
     }
 }
 
 @media (max-width: 940px) {
+    h1 {
+        font-size: 12rem;
+        padding-top: 53%;
+    }
+
+    .icons {
+        position: absolute;
+        font-size: 2rem;
+    }
+
+    .icons li {
+        padding-bottom: 3px;
+    }
+
+    .aboutContent, 
+    .missionContent {
+        text-align: center;
+    }
+    
+    .aboutContainer,
+    .missionContainer {
+    height: 450px;
+    width: 100%;
+    }
+
+    .aboutImage img {
+        /* width: 100%; */
+        position: relative;
+        height: 100%;
+}
+
+    .blog h2 {
+        margin-right: 20px;
+        padding-bottom: 30px;
+    }
+
+    /* .blogContainer {
+        padding-top: 30px;
+    } */
+
+    .blogImage {
+        float: none;
+        width: 80%;
+        margin-left: 80px;
+    }
+
+    .blogContent {
+        float: left;
+        width: 80%;
+        padding-top: 40px;
+        margin-left: 50px;
+        text-align: left;
+    }
+
+    .gram {
+        height: 50vh;
+        padding: 0;
+    }
+
+    input[type=email], button {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+    h1 {
+        font-size: 10rem;
+        padding-top: 65%;
+    }
+
+    .icons {
+        position: absolute;
+        font-size: 2rem;
+    }
+
+    .icons li {
+        padding-bottom: 3px;
+    }
+
+    .aboutContent, 
+    .missionContent {
+        text-align: center;
+    }
+    
+    .aboutContainer,
+    .missionContainer {
+    height: 450px;
+    width: 100%;
+    }
+
+    .aboutImage img {
+        /* width: 100%; */
+        position: relative;
+        height: 100%;
+}
+
+    .blog h2 {
+        margin-right: 20px;
+        padding-bottom: 30px;
+    }
+
+    .blogContainer {
+        padding-top: 30px;
+    }
+
+    .blogImage {
+        float: none;
+        width: 80%;
+        margin-left: 80px;
+    }
+
+    .blogContent {
+        float: left;
+        width: 80%;
+        padding-top: 40px;
+        margin-left: 50px;
+        text-align: left;
+    }
+
+    .gram {
+        height: 50vh;
+        padding: 0;
+    }
+
+    input[type=email], button {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* Landscape phones and down */
